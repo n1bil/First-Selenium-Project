@@ -15,6 +15,7 @@ public class RegistrationTest extends TestBase {
 
     @Test(dataProvider = "readDataFromCSV")
     public void testRegistration(String firstName, String lastName, String email, String password) {
+        driver.findElement(By.cssSelector("#gender-male")).click();
         driver.findElement(By.id("FirstName")).sendKeys(firstName);
         driver.findElement(By.id("LastName")).sendKeys(lastName);
         driver.findElement(By.id("Email")).sendKeys(email);
