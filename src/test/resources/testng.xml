@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokySuite">
+    <test name="SmokyTest">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.homework9.SmokyRegistrationTest" />
+        </classes>
+    </test>
+</suite>

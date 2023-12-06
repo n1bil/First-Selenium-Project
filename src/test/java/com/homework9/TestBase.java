@@ -1,8 +1,8 @@
-package com.homework8;
+package com.homework9;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
@@ -19,7 +19,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();
