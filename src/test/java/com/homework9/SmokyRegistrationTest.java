@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SmokyRegistrationTest extends TestBase {
 
-    @Test(dataProvider = "readDataFromCSV", groups = "smoke")
+    @Test(dataProvider = "readDataFromCSV")
     public void smokyRegistrationTest(String firstName, String lastName, String email, String password) {
         driver.findElement(By.cssSelector("#gender-male")).click();
         driver.findElement(By.id("FirstName")).sendKeys(firstName);
